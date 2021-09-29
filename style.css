@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  background-color: lightskyblue;
+  font-family: Verdana;
+  font-weight: bold;
+}
+.container
+{
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+.container .box
+{
+  background-color: #a5dafb;
+  padding: 20px;
+  display: grid;
+  min-height: 175px;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+.container .box:hover
+{
+  background: #FFFFFF;
+  font-size: 180%;
+}
+.container .box img
+{
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+.container .box:nth-child(1)
+{
+  grid-column: span 2;
+  grid-row: span 1;
+  transition: 999s;
+  min-height: 1px;
+}
+.container .box:nth-child(1):hover
+{
+  font-style: italic;
+}
+.container .box:nth-child(2)
+{
+  background-image: url(https://i.imgur.com/ZPeaRfc.gif);
+  background-size: contain;
+  background-position: center;
+
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.container .box:nth-child(2):hover
+{
+  background-image: url(https://i.imgur.com/ukp175J.gif);
+  color: #ffffff;
+  font-size: 180%;
+}
+.container .box:nth-child(3)
+{
+  background-image: url(http://www.brickshelf.com/gallery/PunkTacoNYC/LegoChilliCrawler/img_1374.jpg);
+  background-size: 100%;
+  background-position: center;
+  min-height: 250px;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.container .box:nth-child(3):hover
+{
+  background-image: url(http://www.brickshelf.com/gallery/PunkTacoNYC/LegoChilliCrawler/img_1390.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+.container .box:nth-child(4)
+{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-image: url(https://i.imgur.com/idTIOnG.gif);
+  background-size: contain;
+  background-position: center;
+}
+.container .box:nth-child(4):hover
+{
+  background-image: url(https://i.imgur.com/Vlfsq8Y.gif);
+  background-size: 100%;
+}
+.container .box:nth-child(5)
+{
+  background-image: url(https://i.imgur.com/F3haxuu.gif);
+  background-position: center;
+  background-size: contain;
+}
+.container .box:nth-child(6)
+{
+
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.container .box:nth-child(7)
+{
+  grid-column: span 3;
+  grid-row: span 2;
+}
+@media (max-width: 991px)
+{
+  .container
+  {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .container .box
+  {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}
