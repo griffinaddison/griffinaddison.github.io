@@ -1,1 +1,28 @@
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vRhznuLlpoAosfQU4B0ScXjnnOsWVh1mDS0imK6Ys7sE1ZMGcUMXgeaGOp-QqAa5KzINM99-YZXiD9Z/pub?embedded=true"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griffin Addison's Resume</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        iframe {
+            width: 80%;
+            height: 90%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRhznuLlpoAosfQU4B0ScXjnnOsWVh1mDS0imK6Ys7sE1ZMGcUMXgeaGOp-QqAa5KzINM99-YZXiD9Z/pub?embedded=true"></iframe>
+</body>
+</html>
