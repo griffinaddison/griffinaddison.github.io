@@ -1,327 +1,339 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
   <head>
-    <link rel="shortcut icon" type="image/x-icon"
-    href="https://iconarchive.com/download/i40151/fatcow/farm-fresh/lorry.ico">
+    <!-- Google analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-STGLQW4BJX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-STGLQW4BJX');
+    </script>
+
+    <!-- Title -->
+    <title>Griffin Addison</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
+
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-    <title>Griffin Addison</title>
-    <style media="screen">
-    /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed*/
-    @media only screen and (max-device-width: 1366px) {
-      .parallax {
-        background-attachment: scroll;
-      }
-    }
-
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-      body
-      {
-        position: relative;
-        text-align: center;
-        justify-content: center;
-        align-self: center;
-        background-color: grey;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        /*background-image: url("https://brickshelf.com/gallery/PunkTacoNYC/nonLego/perspectiveisometric_gaddison.jpg");*/
-        /*background-image: url("https://images.fabric.com/images/2420/2420/0469488.jpg");*/
-        /*background-image: url("https://wallpapercave.com/wp/wp4292415.jpg"); */
-        background-color: lightgrey;
-        /* background-blend-mode:luminosity; */
-        width: 100%
-      }
-
-      a:link {
-        text-decoration: none;
-        padding: 2px 3px;
-        vertical-align: middle;
-        line-height: 22px;
-        font-weight: bold;
-        opacity: 0.75;
-        color: #000000;
-      }
-
-      a:visited {
-        text-decoration: none;
-        padding: 2px 3px;
-        opacity: 0.75;
-        color: #000000;
-
-      }
-
-      a:hover {
-        text-decoration: underline;
-        transition: 0.05s;
-      }
-
-      a:active {
-        text-decoration: none;
-      }
-      p
-      {
-      margin-bottom: 0;
-      }
-
-
-
-
-
-
-
-
-      .businesscard
-      {
-        position: relative;
-        width: min(90vw, 1200px);
-        height: 700px;
-        border-style: none;
-        border-width: 4px;
-        border-radius: 0px;
-        border-color: #353535;
-        background-image: url("https://i.imgur.com/zaSy5s9.png");
-        background-size: 1922px 940px;
-        background-position: 49% 43%;
-
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns:  repeat(4, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-
-
-      }
-
-      .textbox
-      {
-        position: relative;
-        top: 1200px;
-
-        width: min(90vw, 1200px);
-        height: 700px;
-        margin: 0 auto;
-        border-style: solid;
-        border-width: 4px;
-        border-radius: 20px;
-        border-color: #252525;
-        background-color: #EFEFEF;
-        text-align: center;
-
-      }
-
-      .beegnamebox
-      {
-        grid-column: 1 / 3;
-        grid-row: 1;
-        display:grid;
-        border-style: none;
-        border-color: #BBBBBB;
-        max-height: 275px;
-
-
-        font-size: 450%;
-        font-weight: bold;
-        opacity: 0.75;
-        color: #000000;
-        place-items: center;
-        margin-top: 60px;
-        margin-left: 50px;
-        margin-right: -50px;
-      }
-
-      .beegname
-      {
-        position: relative;
-        text-align: center;
-        place-items: center;
-        bottom: 30px;
-      }
-      .beegname:hover
-      {
-        font-style: italic;
-      }
-
-
-      .picchure
-      {
-        grid-column: 3 / 5;
-        grid-row: 1;
-
-        border-radius: 20px
-        padding: 20px;
-        display:grid;
-        border-style: none;
-        border-color: #BBBBBB;
-        max-height: 275px;
-        min-height: 100px;
-        max-width: 550px;
-        margin-top: 60px;
-        filter: grayscale(100%);
-
-
-
-        place-items: center;
-        background-position: center;
-        background-size: 275px;
-        opacity:0.9;
-        background-repeat: no-repeat;
-        background-blend-mode: luminosity;
-
-
-      }
-
-      .picchure:hover
-      {
-        filter:grayscale(0%);
-        transition: 0.5s;
-
-
-      }
-
-
-
-      .box2
-      {
-        grid-column: 1 / 3;
-        grid-row: 2;
-        padding: 20px;
-        display:grid;
-        border-style: none;
-        border-color: #BBBBBB;
-        min-height: 150px;
-        margin-top: 20px;
-        margin-left: 170px;
-        text-align: left;
-
-
-      }
-      .box3
-      {
-        grid-column: 3 / 5;
-        grid-row: 2;
-        padding: 20px;
-        display:grid;
-        border-style: none;
-        border-color: #BBBBBB;
-        margin-top: 20px;
-        margin-left: 60px;
-        text-align: left;
-      }
-
-      .dropbtn {
-
-
-        text-decoration: none;
-        color: #000000;
-        padding: 16px;
-        font-size: 25px;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        opacity: .8;
-        vertical-align: middle;
-        line-height: 22px;
-        border: none;
-        background: none;
-        cursor: pointer;
-        margin: 0;
-        padding: 0;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        font-size: 25px;
-        margin-top: 5px;
-      }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {background-color: #ddd;}
-
-      .dropdown:hover .dropdown-content {display: block;}
-
-      .dropdown:hover .dropbtn {text-decoration: underline;}
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style>
-
   </head>
-  <body>
 
-      <div class="businesscard">
+  <body id="body">
 
-        <div class="beegnamebox">
-          <div class="beegname">
-            <p title="that's my name!">Griffin Addison</p>
-            <p style="font-size:20px;">gaddison@seas.upenn.edu | 917-743-9755 | <a href="https://www.linkedin.com/in/griffin-addison-4984281a1/?trk=public-profile-join-page" target="_blank">linkedin</a></p>
-          </div>
-          <p style="font-size:25px;margin-bottom:-100px;margin-right:200px;">stuff i've done:</p>
-        </div>
-        <div class="picchure">
-          <img src="https://i.imgur.com/HJAC1GD.jpg" alt="GriffinHeadshot" width="250" >
-        </div>
-        <div class="box2">
-          <div class="dropdown">
-            <button class="dropbtn">&#129520; mechanical </button>
-            <div class="dropdown-content">
-              <a href="https://www.youtube.com/c/punktaconyc" target="_blank">  offroad vehicles</a>
-              <a href="https://docs.google.com/presentation/d/1207izVAnWV7jpAuGjPYthfntoo_H91k4KbzrfYEnUGY/edit#slide=id.gfcfcf3b8ed_0_87">FSAE suspension</a>
-              <a href="https://docs.google.com/presentation/d/1O49sKEPppDfs673_XG5jemJbVxTu2gIPxAIeJF5Ae3s/edit?usp=sharing">TIG Welding</a>
-              <a href="https://drive.google.com/drive/folders/1QcbS6TuavebGubdlgB7ezEMWAh5SG2Jc?usp=sharing">Heat Engine - Patent Motorwagen</a>
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <h1>Griffin Addison</h1>
+          <p>
+            this website is under construction!
+            <div id="more-bio" style="display: None">
+              <br>
+              <p></p>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">&#128161; electrical </button>
-            <div class="dropdown-content">
-                <a href="https://docs.google.com/document/d/1h1fiZ02VJQjaSJ3yLHGvcbn1VeTMn9Pf7IE2EyMGkCQ/edit?usp=sharing">custom e-skate battery</a>
-                <a href="https://drive.google.com/file/d/1HKHbUhlHWa-sBQ-AaWzWot589v3Wqft5/view?usp=sharing">dvd logo boss battle - java</a>
-                <a href="#" target="_blank">  self-built pc & keyboard</a>
-                <a href="#">paint - ocaml</a>
-                <a href="index.html">this website</a>
-            </div>
-          </div>
-
+            <br>
+            <a href="https://docs.google.com/document/d/1BZa84OgFflr23CdjlmotRUt6PF5r-BkpBrd0ORIYaXw/edit?usp=sharing">resume</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/andyzenglinked">linkedin</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/griffinaddison">github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <br><br>
+            griffin at alumni dot upenn dot edu
+            <br><br>
+          </p>
         </div>
-        <div class="box3">
-          <div class="dropdown">
-            <button class="dropbtn">&#127909; animation/SAG actor </button>
-            <div class="dropdown-content">
-              <a href="https://drive.google.com/drive/folders/1SufieiBvHdV2RkMqDcWUH46JT2rMjgBT?usp=sharing" target="_blank">SAG tv commercials</a>
-              <a href="https://youtu.be/PayJG8u3hEE" target="_blank">  "Wheely Fast" - maya animation</a>
-              <a href="https://www.youtube.com/watch?v=8G5emWWlgro" target="_blank">"Lucky Charms" - film festival</a>
-              <a href="https://drive.google.com/file/d/1iqqH3Dmtn8clgpm_FwhWT68gmyNP1rIA/view?usp=sharing" target="_blank">FSAE Unveiling - Keyshot/Resolve</a>
-            </div>
-          </div>
-          <a href="resume.html" class="dropbtn">&#128209; resume</a>
-
+        <div id="intro-image">
+          <img src="images/profile.jpg">
         </div>
-
-      </div>
-      <div class="textbox">
-        under construction
       </div>
 
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <button class="button is-checked" data-filter=".highlight">highlights</button>
+        <button class="button" data-filter=".publication">robotics</button>
+        <button class="button" data-filter=".talk">dynamics</button>
+        <button class="button" data-filter=".misc">misc</button>
+      </div>
 
+      <div class="grid">
+
+        <!-- Highlights -->
+        <div class="list-item highlight description" data-category="highlight">
+          project highlights:
+        </div>
+
+        <!-- Preview Videos -->
+        <div class="list-item highlight previews" data-category="highlight">
+
+          <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing"><video class="preview1" playsinline="" muted="" autoplay="" loop=""><source src="images/twist_jammin_wbc.mp4" type="video/mp4"></video></a>
+
+
+          <a href="index.html"><video class="preview3" playsinline="" muted="" autoplay="" loop=""><source src="images/doq_outside.mp4" type="video/mp4"></video></a>
+
+          <a href="https://docs.google.com/presentation/d/1qTTvqqTvAe8SFrdVbezYIov0FAByQC2gM4cK8SdRhoA/edit?usp=sharing"><video class="preview2" playsinline="" muted="" autoplay="" loop=""><source src="images/rev7_rearsuspension_bumping2.mp4" type="video/mp4"></video></a>
+
+        </div>
+
+        <!-- Truncated Set of Highlights (Shown by Default) -->
+        <div id="main-highlights">
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Kod*Lab @ GRASP Lab</b> <a href="index.html">Modern Robotic Controls</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Lucid</b> <a href="index.html">Traction Control Software</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>Tesla</b> <a href="index.html">Battery Design Protoyping</a>
+          </div>
+
+
+
+
+
+
+
+        <!-- Publications -->
+
+        <div class="list-item publication" data-category="talk">
+          <p class="date">2024</p>Vivodyne - <a href="index.html">Robotics Engineer</a>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/abs/2402.05741" class="thumbnail">
+            <img src="images/fm-review.jpeg" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2402.05741">learning to ride a unicycle: rl + wbc</a></h3>
+            <p>
+PPO RL versus PPO RL w/ WBC <br>
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <a href="https://arxiv.org/abs/2402.05741">replace</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/abs/2402.05741" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/twist_jammin_wbc.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2402.05741">whole-body controller</a></h3>
+            <p>
+dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br>
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing">poster</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://drive.google.com/file/d/1pNEH0s-VH7oNs9NgfCBSTaGm--gslvsx/view?usp=sharing">video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="index.html">paper (coming soon)</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+        <div class="list-item publication" data-category="publication">
+          <a href="https://generative-expressive-motion.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/genem.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://generative-expressive-motion.github.io/">doq hardware</a></h3>
+            <p>
+full-stack robotic system design + control<br>
+                <br>
+                <font color="49bf9"><i>&#9733; ICRA 2023 Workshop</i></font><br>
+                <a href="https://generative-expressive-motion.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2401.14673">PDF</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Talks -->
+        <!-- <div class="list-item talk description" data-category="talk">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+        <!-- <div class="list-item talk" data-category="publication"> -->
+        <!--   <a href="https://generative-expressive-motion.github.io/" class="thumbnail"> -->
+        <!--   <img src="images/lucid_logo.png"> -->
+        <!--   </a> -->
+        <!--   <br> -->
+        <!--   <br> -->
+        <!--   <div class="project-description"> -->
+        <!--     <h3><a href="https://generative-expressive-motion.github.io/">Lucid Motors - Traction Control Software for the Air</a></h3> -->
+        <!--   </div> -->
+        <!-- </div> -->
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2023</p>Lucid Motors - <a href="index.html">Traction Control Software for the Air</a>
+        </div>
+
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2022</p>Penn Electric Racing (FSAE) - <a href="index.html">Suspension Lead</a>
+        </div>
+        <div class="list-item talk" data-category="publication">
+          <a href="https://generative-expressive-motion.github.io/" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/rev7_rearsuspension_bumping2.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://generative-expressive-motion.github.io/">Suspension Lead @ Penn Electric Racing (FSAE)</a></h3>
+            <p>
+design, manufacture, and testing of formula-sytle suspension<br>
+                <br>
+                <font color="49bf9"><i>&#9733; Design Finalist, 22/25 Score</i></font><br>
+                <a href="https://generative-expressive-motion.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://arxiv.org/abs/2401.14673">PDF</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Services -->
+        <div class="list-item misc" data-category="talk">
+          <p class="date">2022</p>Tesla - <a href="https://www.youtube.com/watch?v=x25KU_wxwWw">Battery Design for the Cybertruck</a>
+        </div>
+
+
+        <div class="list-item misc" data-category="publication">
+          <a href="https://arxiv.org/abs/2402.05741" class="thumbnail">
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/twist_jammin_wbc.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2402.05741">whole-body controller</a></h3>
+            <p>
+dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br>
+                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
+                <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing">poster</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="https://drive.google.com/file/d/1pNEH0s-VH7oNs9NgfCBSTaGm--gslvsx/view?usp=sharing">video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                <a href="index.html">paper (coming soon)</a>
+                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="footer"> website template generously open-sourced by <a href="https://github.com/andyzeng/andyzeng.github.io">Andy Zeng</a></div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_highlights() {
+        var x = document.getElementById("main-highlights");
+        var y = document.getElementById("more-highlights");
+        var b = document.getElementById("toggle_highlights_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
   </body>
 </html>
