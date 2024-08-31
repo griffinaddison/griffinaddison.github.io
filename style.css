@@ -19,6 +19,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  /* background-color: #c9c9c9; */
+  background-color: #d9d9d9;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -26,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+  /* background-color: #09c9c9; */
   line-height: 1;
 }
 ol, ul {
@@ -50,11 +53,15 @@ table {
   font-family: 'Asap', roboto, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  color: #150c21;
+  /* color: #150c21; */
+  color: #000000;
+  /* color: #cccccc; */
 }
 
 #main {
   width: 54em;
+  max-width: 760px;
+  /* padding: 200px; */
   margin: 0px auto;
   position: relative;
   min-height: 100vh;
@@ -83,6 +90,9 @@ h1 {
   line-height: 3em;
   font-weight: 500;
 }
+h1:hover {
+  font-style: italic;
+}
 
 /**************************************************/
 /* Profile image and description. */
@@ -98,12 +108,18 @@ h1 {
 }
 
 #intro-image {
+  filter:grayscale(100%);
+  transition: 0.5s;
   margin: 2em 0 0 2em;
   width: 12em;
   height: 12em;
   float: left;
   overflow: hidden;
   border-radius: 1em;
+}
+#intro-image:hover {
+  filter:grayscale(0%);
+  transition: 0.5s;
 }
 
 #intro-image img {
@@ -214,14 +230,30 @@ h2 {
 .preview1 {
   grid-column: 1;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  /* height: 200px; */
+  /* max-height: 200px; */
+  /* max-width: 300px; */
 }
 .preview2 {
   grid-column: 2;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: left bottom;
+  /* max-height: 200px; */
+  /* max-width: 300px; */
 }
 .preview3 {
   grid-column: 3;
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  /* max-height: 200px; */
+  /* max-width: 300px; */
 }
 
 /**************************************************/
@@ -257,14 +289,18 @@ h2 {
   margin-top: 0.4em;
   border-radius: 5px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
 }
 
 .thumbnail video {
   margin-top: 0.4em;
   border-radius: 5px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
 }
 
 h3 {
