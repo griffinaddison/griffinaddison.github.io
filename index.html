@@ -63,8 +63,8 @@
         <!-- <button class="button" data-filter="*">Show All</button> -->
         <button class="button is-checked" data-filter=".highlight">highlights</button>
         <button class="button" data-filter=".publication">robotics</button>
-        <button class="button" data-filter=".talk">dynamics</button>
-        <button class="button" data-filter=".misc">misc</button>
+        <button class="button" data-filter=".talk">software</button>
+        <button class="button" data-filter=".misc">mechanical</button>
       </div>
 
       <div class="grid">
@@ -96,9 +96,13 @@
           <div class="list-item highlight" data-category="highlight">
             <b>Lucid</b> <a href="index.html">Traction Control Software</a>
           </div>
-
+          
           <div class="list-item highlight" data-category="highlight">
             <b>Tesla</b> <a href="index.html">Battery Design Protoyping</a>
+          </div>
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>FSAE</b> <a href="index.html">Suspension Lead</a>
           </div>
 
 
@@ -122,12 +126,12 @@
           </a>
           <div class="project-description">
             <h3>
-                <a href="index.html">PPO RL implementation: learning to walk</a></h3>
+                <a href="index.html">reinforcement learning via PPO: learning to walk</a></h3>
             <p>
-proximal policy optimization implemented with numpy and pytorch in OpenAI Gym, MuJoCo<br>
+from-scratch implementation of proximal policy optimization w/ numpy and pytorch in OpenAI Gym, MuJoCo<br>
                 <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
                 <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <a href="https://arxiv.org/abs/2402.05741">replace</a>
+                <a href="https://github.cor/griffinaddison/walker_ppo_rl">code</a>
                 <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
             </p>
           </div>
@@ -147,7 +151,8 @@ dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br>
                 <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
                 <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing">poster</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
                 <a href="https://drive.google.com/file/d/1pNEH0s-VH7oNs9NgfCBSTaGm--gslvsx/view?usp=sharing">video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="index.html">paper (coming soon)</a>
+                <!-- <a href="index.html">paper (coming soon)</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                <a href="https://github.com/KodlabPenn/kodlab_mjbots_sdk/tree/wbc">code</a>
                 <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
             </p>
           </div>
@@ -155,18 +160,24 @@ dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br>
 
         <div class="list-item publication" data-category="publication">
           <a href="https://generative-expressive-motion.github.io/" class="thumbnail">
+            <!-- <video playsinline="" muted="" autoplay="" loop="" width="180px"> -->
+            <!--   <source src="images/genem.mp4" type="video/mp4"> -->
+            <!-- </video> -->
             <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="images/genem.mp4" type="video/mp4">
+              <source src="images/doq_outside.mp4" type="video/mp4">
             </video>
           </a>
           <div class="project-description">
-            <h3><a href="https://generative-expressive-motion.github.io/">Dynamic Origami Quadruped (DOQ): design & control</a></h3>
+            <h3>
+                <a href="https://generative-expressive-motion.github.io/">Dynamic Origami Quadruped (DOQ): design & control</a>
+            </h3>
             <p>
 full-stack kinematic and mechatronic design, C++ controls<br>
-                <br>
                 <font color="49bf9"><i>&#9733; ICRA 2023 Workshop</i></font><br>
+                <!-- <br> -->
+                <a href="index.html">paper (coming soon)</a>
+
                 <!-- <a href="https://generative-expressive-motion.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <!-- <a href="https://arxiv.org/abs/2401.14673">PDF</a> -->
                 <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
             </p>
           </div>
@@ -198,10 +209,39 @@ full-stack kinematic and mechatronic design, C++ controls<br>
         </div>
 
 
-        <div class="list-item talk" data-category="talk">
+<!--         <div class="list-item talk" data-category="talk"> -->
+<!--           <p class="date">2022</p>Penn Electric Racing (FSAE) - <a href="index.html">Suspension Lead</a> -->
+<!--         </div> -->
+<!--         <div class="list-item talk" data-category="publication"> -->
+<!--           <a href="index.html" class="thumbnail"> -->
+<!--             <video playsinline="" muted="" autoplay="" loop="" width="180px"> -->
+<!--               <source src="images/rev7_rearsuspension_bumping2.mp4" type="video/mp4"> -->
+<!--             </video> -->
+<!--           </a> -->
+<!--           <div class="project-description"> -->
+<!--             <h3><a href="https://generative-expressive-motion.github.io/">Suspension Lead @ Penn Electric Racing (FSAE)</a></h3> -->
+<!--             <p> -->
+<!-- design, manufacture, and testing of formula-sytle suspension<br> -->
+<!--                 <br> -->
+<!--                 <font color="49bf9"><i>&#9733; Design Finalist, 22/25 Score</i></font><br> -->
+<!--             </p> -->
+<!--           </div> -->
+<!--         </div> -->
+
+
+
+
+
+        <!-- Services -->
+        <div class="list-item misc" data-category="talk">
+          <p class="date">2022</p>Tesla - <a href="https://www.youtube.com/watch?v=x25KU_wxwWw">Battery Design for the Cybertruck</a>
+        </div>
+
+        <div class="list-item misc" data-category="talk">
           <p class="date">2022</p>Penn Electric Racing (FSAE) - <a href="index.html">Suspension Lead</a>
         </div>
-        <div class="list-item talk" data-category="publication">
+
+        <div class="list-item misc" data-category="publication">
           <a href="index.html" class="thumbnail">
             <video playsinline="" muted="" autoplay="" loop="" width="180px">
               <source src="images/rev7_rearsuspension_bumping2.mp4" type="video/mp4">
@@ -220,35 +260,22 @@ design, manufacture, and testing of formula-sytle suspension<br>
           </div>
         </div>
 
-
-
-
-
-        <!-- Services -->
-        <div class="list-item misc" data-category="talk">
-          <p class="date">2022</p>Tesla - <a href="https://www.youtube.com/watch?v=x25KU_wxwWw">Battery Design for the Cybertruck</a>
-        </div>
-
-
-        <div class="list-item misc" data-category="publication">
-          <a href="https://arxiv.org/abs/2402.05741" class="thumbnail">
-            <video playsinline="" muted="" autoplay="" loop="" width="180px">
-              <source src="images/twist_jammin_wbc.mp4" type="video/mp4">
-            </video>
-          </a>
-          <div class="project-description">
-            <h3><a href="https://arxiv.org/abs/2402.05741">whole-body controller</a></h3>
-            <p>
-dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br>
-                <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
-                <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
-                <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing">poster</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="https://drive.google.com/file/d/1pNEH0s-VH7oNs9NgfCBSTaGm--gslvsx/view?usp=sharing">video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                <a href="index.html">paper (coming soon)</a>
-                <br> <!-- TODO: extra spaces until I figure out the margin bug. -->
-            </p>
-          </div>
-        </div>
+<!--         <div class="list-item misc" data-category="publication"> -->
+<!--           <a href="https://arxiv.org/abs/2402.05741" class="thumbnail"> -->
+<!--             <video playsinline="" muted="" autoplay="" loop="" width="180px"> -->
+<!--               <source src="images/twist_jammin_wbc.mp4" type="video/mp4"> -->
+<!--             </video> -->
+<!--           </a> -->
+<!--           <div class="project-description"> -->
+<!--             <h3><a href="https://arxiv.org/abs/2402.05741">whole-body controller</a></h3> -->
+<!--             <p> -->
+<!-- dynamics-aware control of quadruped in C++, Eigen, MuJoCo<br> -->
+<!--                 <a href="https://docs.google.com/presentation/d/12WoKOS5XfBD3luXUHpRqmU-Xi6TJ6rYdAEj473Nt1Uo/edit?usp=sharing">poster</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+<!--                 <a href="https://drive.google.com/file/d/1pNEH0s-VH7oNs9NgfCBSTaGm--gslvsx/view?usp=sharing">video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+<!--                 <a href="index.html">paper (coming soon)</a> -->
+<!--             </p> -->
+<!--           </div> -->
+<!--         </div> -->
 
 
       </div>
