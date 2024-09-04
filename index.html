@@ -27,8 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    <style> @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     </style>
   </head>
 
@@ -116,12 +115,16 @@
 
         <div class="list-item publication" data-category="publication">
           <a href="https://arxiv.org/abs/2402.05741" class="thumbnail">
-            <img src="images/fm-review.jpeg" alt="" />
+            <!-- <img src="images/learning_to_walk_ppo.mp4" alt="" /> -->
+            <video playsinline="" muted="" autoplay="" loop="" width="180px">
+              <source src="images/learning_to_walk_ppo.mp4" type="video/mp4">
+            </video>
           </a>
           <div class="project-description">
-            <h3><a href="index.html">learning to ride a unicycle: rl + wbc</a></h3>
+            <h3>
+                <a href="index.html">PPO RL implementation: learning to walk</a></h3>
             <p>
-PPO RL versus PPO RL w/ WBC, OpenAI Gym, Python <br>
+proximal policy optimization implemented with numpy and pytorch in OpenAI Gym, MuJoCo<br>
                 <!-- <i>Conference on Robot Learning (CoRL) 2023</i><br> -->
                 <!-- <a href="https://video-language-planning.github.io/">Webpage</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
                 <a href="https://arxiv.org/abs/2402.05741">replace</a>
