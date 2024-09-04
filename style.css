@@ -326,6 +326,16 @@ h3 a:hover {
   color: #a0a8b0;
 }
 
+.talk {
+  margin-bottom: 0.5em;
+}
+
+.talk p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #a0a8b0;
+}
+
 .project-description {
   width: 80%;
   float: left;
