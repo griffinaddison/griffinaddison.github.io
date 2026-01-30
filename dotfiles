@@ -24,11 +24,11 @@ echo ""
 echo "What would you like to install?"
 echo "  1) Config only (stow dotfiles)"
 echo "  2) Dependencies only"
-echo "  3) Everything (deps + config)"
+echo "  3) Everything (deps + config) [default]"
 echo ""
 read -p "Choice [1/2/3]: " choice
 
-case $choice in
+case ${choice:-3} in
     1)
         ./install-config.sh
         ;;
