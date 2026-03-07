@@ -1,48 +1,17 @@
 #!/usr/bin/env bash
 set -e
 
+# Thin wrapper — clones the dotfiles repo, then hands off to remote-install.sh
 DOTFILES_DIR="$HOME/.dotfiles"
 REPO="https://github.com/griffinaddison/dotfiles.git"
 
-echo "=== Griffin's Dotfiles Installer ==="
-
-# Clone dotfiles
 if [[ -d "$DOTFILES_DIR" ]]; then
-    echo "Dotfiles already exist at $DOTFILES_DIR"
-    echo "Updating..."
-    cd "$DOTFILES_DIR"
-    git pull
-    git submodule update --init --recursive
+    echo "Updating dotfiles..."
+    git -C "$DOTFILES_DIR" pull
+    git -C "$DOTFILES_DIR" submodule update --init --recursive
 else
     echo "Cloning dotfiles..."
     git clone --recurse-submodules "$REPO" "$DOTFILES_DIR"
-    cd "$DOTFILES_DIR"
 fi
 
-# Ask what to install
-echo ""
-echo "What would you like to install?"
-echo "  1) Config only (stow dotfiles)"
-echo "  2) Dependencies only"
-echo "  3) Everything (deps + config) [default]"
-echo ""
-read -p "Choice [1/2/3]: " choice
-
-case ${choice:-3} in
-    1)
-        ./install-config.sh
-        ;;
-    2)
-        ./install-deps.sh
-        ;;
-    3)
-        ./install.sh
-        ;;
-    *)
-        echo "Invalid choice"
-        exit 1
-        ;;
-esac
-
-echo ""
-echo "Done! Restart your shell or run: source ~/.zshrc"
+exec bash "$DOTFILES_DIR/remote-install.sh" "$@"
